@@ -24,12 +24,12 @@ let checkButton = document.getElementById('check');
 checkButton.addEventListener('click', function() {
     if(correctSolution == userSolution) {
         //correct
-        correctImg.style.display = 'block';
+        correctImg.style.display = 'block'}
         //alert('joepie')
     }
 else {
     //wrong
-    wrongImg.style.display= 'block';
+    wrongImg.style.display= 'block'
     //alert('uh oh')
     }
 })

@@ -1,5 +1,5 @@
 
-
+/*
 let number= prompt('geef een getal in');
 
 console.log("dit is wat tekst");
@@ -18,8 +18,9 @@ let text2 = `de lengte is ${numberLength} karakters lang`;
 document.write(text);
 document.write('<br>');
 document.write(text2);
-/*
+*/
 
+/*
 let number = prompt('geef een eerste getal in');
 number = parseFloat(number);
 
@@ -40,8 +41,8 @@ console.log(i); //7 --> want ongewijzigd
 console.log(i++); //7 --> want eerst gelogd, dan pas 1 aan toegevoegd
 console.log(i); //8 --> 1 is toegevoegd in voorgaande statement
 console.log(++i); //9 --> eentje toevoegen, dan loggen
-
 */
+
 
 let students =['Yentl','Steff','Casper','Ona','Fleur']
 
@@ -54,8 +55,8 @@ let amountHours = number / 3600; //kommagetal...
 amountHours = Math.floor(amountHours);
 
 //hoeveel seconden blijven er over?
-let remainingseconds = number % 3600;
+let remainingSeconds = number % 3600;
 console.log('Overgebleven seconden: ' + remainingSeconds);
 
-let amountMinutes = Math.floor(remainingseconds / 60);
+let amountMinutes = Math.floor(remainingSeconds / 60);
 console.log('Aantal minuten: ' + amountMinutes);

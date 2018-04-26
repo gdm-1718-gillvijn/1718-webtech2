@@ -3,13 +3,14 @@ let anchorTags, strongTags, spanTags;
 
 anchorTags = document.getElementsByTagName('a');
 strongTags = document.getElementByTagName('strong');
-spantags = document.getElementByTagName('span');
+spanTags = document.getElementByTagName('span');
 
 // eerste anchor tag uit de array van anchorTags halen
-let linkElement = anchorTag[0];
+let linkElement = anchorTags[0];   //was eerst anchorTag, weet niet of ik dit mocht veranderen!
+
 
 //event toepassen
-LinkElement.addEventListener('mouseover', function(){
+linkElement.addEventListener('mouseover', function(){
 
     //eerste strong tag oranje maken
     let firstStrongTag = strongTags[0];
@@ -25,7 +26,8 @@ LinkElement.addEventListener('mouseover', function(){
 
 });
 
-LinkElement.addEventListener('mouseout', function(){
+
+linkElement.addEventListener('mouseout', function(){
 
     //alle strongTags doorlopen
     for(let i = 0; i < spanTags.length; i++) {
@@ -34,7 +36,8 @@ LinkElement.addEventListener('mouseout', function(){
     let firstStrongTag = strongTags[0];
     firstStrongTag.style.Color = 'orange';
         
-});
+}
+);
 //events toepassen op de link
 
 //element ophalen

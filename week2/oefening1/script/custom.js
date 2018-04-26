@@ -10,8 +10,8 @@ else {
     //oneven
     document.write('het getal is oneven')
 }
-
 */
+
 
 // elementen ophalen
 let inputNumber = document.getElementById('getal');

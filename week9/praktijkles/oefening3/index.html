@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 9 - Oefening 1</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      textarea:valid, input:valid {
+        border-color:turquoise;
+      }
+      input:invalid {
+        border-color: tomato
+      }
+      
+    </style>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<img id="HebJeMijGemist" src="./best.jpg"/>
+<h1>Wat weet jij over de mol?</h1>
+
+<form>
+
+  <ul>
+    <li>
+      <label></label>
+    </li>
+    <li>
+      <label for="shirtColor">Welke kleur t-shirt had de mol vandaag aan?</label>
+      <input type="text" name="shirtColor" id="shirtColor" pattern="[Rr]ood|[Gg]roen|[Gg]rijs|zwart" required>
+    </li>
+    <li>
+        <label>Sliep de mol in de auto?</label>
+        <ul>
+          <li><input type="radio" name="carSleeper" value="yes"required>ja</li> <!-- door dezelfde naam te geven , kan het maar een van de twee zijn-->
+          <li><input type="radio" name="carSleeper" value="no" required>nee</li>
+        </ul>
+      </li>
+      <li>
+        <label>Hoe oud schat je de mol?</label>
+        <input type='number' name='age' min="21" max="62" required>
+      </li>
+      <li>
+        <label>Als de mol een e-mailadres heeft met volgend patroon: <em></em></label>
+        <input type="email" name="email" required pattern="[\w.+-]+@demol.be">
+      </li>
+      <li>
+        <label>Argumenteer je antwoord</label>
+        <textarea name="answer" minlength="100"required></textarea>
+      </li>
+  </ul>
+  <button type="submit" id="SendForm">verzenden</button>
+</form>
+    <script src="script/custom.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ let amountTries = 1;
 
 while(password != guess){
     amountTries++; // tries 
-    guess = prompt('Wat is het geheime wachtwoord???');
+    guess = prompt('Wat is het  wachtwoord???');
 }
 
 document.write('je hebt het wachtwoord geraden' + password + ' geraden')

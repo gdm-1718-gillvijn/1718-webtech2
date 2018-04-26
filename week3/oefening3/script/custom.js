@@ -37,6 +37,7 @@ function drawMountain(lengthOfMountain) {
 function drawFlatArea(lengthFlat) {
     let i= 1;
     while(i <= lengthFlat) {
-        document.
+        document.write("'");
+        i++
     }
 }

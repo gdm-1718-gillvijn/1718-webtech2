@@ -1,0 +1,8 @@
+.mol {
+    background-image: url(../images/mol.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
