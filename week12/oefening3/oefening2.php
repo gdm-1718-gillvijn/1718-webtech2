@@ -27,7 +27,7 @@
 <body>
 
     <h1>Contacteer mij</h1>
-    <h1>Watn ik ben het waard</h1>
+    <h1>Want ik ben het waard</h1>
 
     <div id="contact";
 
@@ -88,7 +88,7 @@
             ?>
         </ul>
 
-        <ul class="confirmation"></ul>
+        <ul class="confirmation">
         <?php
 
                 $errors = false;

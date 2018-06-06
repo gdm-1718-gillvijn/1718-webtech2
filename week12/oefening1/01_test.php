@@ -14,7 +14,7 @@
 
 echo 'Hello world';
 
-echo '<br>'
+echo '<br>';
 print 'Hello World';
 
 ?>

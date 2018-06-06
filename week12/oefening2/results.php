@@ -17,8 +17,9 @@ else if(isset($_GET['zoekveld'])) {
     $zoekVeld = $_GET['zoekveld'];
 }
 else {
-    echo 'goofbye good world';
-    //die (); // stop vanaf hier
+    echo 'goodbye good world';
+    //die (); 
+    // stop vanaf hier
     $zoekVeld ='';
 }
 
@@ -28,12 +29,12 @@ if (empty($_GET['zoekveld'])) {
 }
 // niet leeg, dus zoekresultaten weergeven
 else {
-    echo '<h1>U zocht naar  ${zoekveld}. $_GET['zoekveld']</h1>';
+    echo '<h1>U zocht naar  ${zoekveld}. $_GET[zoekveld]</h1>';
 }
 /**
 * formulier kan twee methodes hebben om het te versturen naar de server
 * - GET (via de adresbalk)
-* - POST (via een resquest hedader)
+* - POST (via een resquest header)
 *
 *ophalen van die data i php doe je met $_GET of $_POST
 */ 

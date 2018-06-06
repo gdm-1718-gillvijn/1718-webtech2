@@ -1,6 +1,6 @@
 let fruit = ['appel','peer','ananas','banaan','avocado'];
 
-for(let i=0;i<fruit.length;i++){
+for(let i=0; i<fruit.length; i++){
     document.write(fruit[i]);
     document.write('<br>');
 
@@ -21,7 +21,7 @@ const doSomethingElse = function() {
 
 //functie expressie
 const doSomethingElse = function(arrayName) {
-    for(let i=0;i<arrayName.length;i++){
+    for(let i=0; i<arrayName.length; i++){
 
         document.write(arrayName[i]);
         document.write('<br>');

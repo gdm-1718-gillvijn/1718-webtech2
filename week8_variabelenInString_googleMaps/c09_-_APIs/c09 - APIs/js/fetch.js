@@ -22,7 +22,7 @@ function populateHeader(jsonObj) {
     header.appendChild(myH1);
     let myPara = document.createElement('p');
     myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    //myPara.textContent = 'Hometown: $(jsonObj.homeTown) // Formed: $(jsonObj.formed); !!!! BETER ZO !!!
+    //myPara.textContent = 'Hometown: $(jsonObj.homeTown) // Formed: $(jsonObj.formed)'; !!!! BETER ZO !!!
     header.appendChild(myPara);
 }
 

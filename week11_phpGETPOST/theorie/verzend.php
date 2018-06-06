@@ -2,7 +2,7 @@
 //superglobals
  $username = $_GET['username'];
  $favdate = $_GET['fav-date'];
- if(isset($*_POST['fav-date'])) && !empty($_POST['fav-date'])) //isset wordt gebruikt om te kijken of je op een knop hebt geklikt of niet
+ if(isset($_POST['fav-date'])) && !empty($_POST['fav-date'])) //isset wordt gebruikt om te kijken of je op een knop hebt geklikt of niet
  {
      $favdate = $_POST['fav-date'];
  }

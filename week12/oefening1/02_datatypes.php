@@ -25,7 +25,7 @@ $someCoolVariabele = 'Hello World';
 var_dump ( $someCoolVariabele); //je kan meer informatie zien! 
 
 
-echo '<h2>Samengestelde Datatypes</h2>'
+echo '<h2>Samengestelde Datatypes</h2>';
 echo '<h3>Array</h3>';
 
 //oude notatie
@@ -36,11 +36,10 @@ var_dump($a);
 
 //associatieve array
 $myFavorites = [
-    'movie' ==> 'Star Wars',
-    'book' ==> 'Harry Potter',
-    'music' ==> 'M-kids'
+    'movie' => 'Star Wars',
+    'book' => 'Harry Potter',
+    'music' => 'M-kids'
 ];
-
 echo '<br>';
 
 var_dump($myFavorites);

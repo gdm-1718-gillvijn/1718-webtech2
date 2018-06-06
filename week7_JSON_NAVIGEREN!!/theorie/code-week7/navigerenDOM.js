@@ -15,7 +15,7 @@ console.log(parasAlt);
 
 
 //3. alle elementen met de klasse a
-let aElementen = document.getElementsByClassName('a');
+let aElementen = document.getAlementsByClassName('a');
 console.log(aElementen);
 let aElementenAlt = document.querySelectorAll('.a');
 console.log(aElementenAlt);

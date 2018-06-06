@@ -17,7 +17,7 @@ linkElement.addEventListener('mouseover', function(){
     firstStrongTag.style.Color = 'orange';
 
     //tweede strong tag oranje maken
-    strongTags[i].style.color = 'orange'
+    strongTags[1].style.color = 'orange'
     
     // alle spantags doorlopen
     for(let i = 0; i < spanTags.length; i++) {
@@ -36,12 +36,11 @@ linkElement.addEventListener('mouseout', function(){
     let firstStrongTag = strongTags[0];
     firstStrongTag.style.Color = 'orange';
         
-}
-);
+};
 //events toepassen op de link
 
 //element ophalen
 let spinach= document.getElementById('spinach');
-
 //kleur veranderen
-spinachElement.style.color = '#FF00FF';
+spinach.style.color = '#FF00FF';
+
