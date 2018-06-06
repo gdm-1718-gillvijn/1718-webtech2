@@ -1,65 +1,71 @@
 var books = [
-    {title: 'Harry Potter',
-    author: 'J.K. Rowling',
-    alreadyRead: false
+    {
+        title: 'Harry Potter',
+        author: 'J.K. Rowling',
+        alreadyRead: false
     },
-    {title: 'Jane Eyre',
-    author: 'Charlotte Brontë',
-    alreadyRead: true
+    {
+        title: 'Jane Eyre',
+        author: 'Charlotte Brontë',
+        alreadyRead: true
     },
-    {title: 'De verschrikkelijke schoolmeester.',
-    author: 'Dolf Verroen',
-    alreadyRead: true
+    {
+        title: 'De verschrikkelijke schoolmeester.',
+        author: 'Dolf Verroen',
+        alreadyRead: true
     }
-    ];
+];
 
-    // hoe zorg ik ervoor dat er in de console Dolf Verroen gelogd wordt
+let divBooks = document.getElementById('books');
 
-    console.log(books[2].author);
 
-    let divBooks = document.getElementById('books');
+for(let i = 0; i < books.length; i++) {
 
-    for(let i = 0; i < books.length; i++) {
+    let content = '';
 
-        let content = '';
+    content = '<p>' + books[i].title + ' by ' + books[i].author + '</p>';
 
-        content = '<p>' + books[i].title + ' by ' + books[i].author + '</p>'
+    if(books[i].alreadyRead) {
+        // al gelezen
+        content += '<p>You have already read this book</p>'
+    }
+    else {
+        // niet gelezen
+        content += '<p>It\'s time to read this novel!</p>'
+    }
 
-        if(books[i].alreadyRead) {
-            // al gelezen
-            content += '<p>It\'s time to read this novel!</p>';
+    content += '<hr>';
+    
+    divBooks.innerHTML += content;
+}
+
+
+
+
+
+
+let Book = function(name, writer, alreadyRead) {
+
+    this.title = name,
+    this.author = writer,
+    this.alreadyRead = alreadyRead,
+    this.output = function() {
+        if(this.alreadyRead) {
+            return "al gelezen";
         }
         else {
-            //niet gelezen
-            content += '<p>It\'s time to read this novel!</p>';
+            return "nog niet gelezen";
         }
     }
+}
 
-//constructor
-        let Book = function(name, writer, alreadyRead) {
+let myFavouriteBook = new Book('Twilight', 'Stephenie Meyer', false);
+let excitingNovel = new Book('The Da Vinci Code', 'Dan Brown', true);
 
-            this.title = name,
-            this.author = writer,
-            this.alreadyRead = alreadyRead,
-            this.output = function() {
-                if(this.alreadyRead) {
-                    return "al gelezen";
-                }
-                else {
-                    return "nog niet gelezen"
-                }
-            }
-        }
-
-    let myFavouriteBook = new Book('Twilight', 'Stephenie Meyer', false);
-    let excitingNovel = new Book('The Da Vinci Code', 'Dan Brown', true);
-
-    // .output geeft de return weer
-    //je kan ook .title
-    // na output () altijd!
-
-    console.log(myFavouriteBook.output());
-
-    console.log(excitingNovel);
+// let op de haakjes
+console.log(myFavouriteBook.output());
 
 
+console.log(myFavouriteBook.title);
+
+console.log(excitingNovel);

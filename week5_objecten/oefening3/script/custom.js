@@ -1,16 +1,17 @@
-var dog = {
+let dog = {
     breed: 'Collie',
     name: 'Lassie',
-    color: 'brownnish',
+    color: 'brownish',
     age: 56,
     gender: 'm',
-    coloreyes: function() {
+    colorEyes: function() {
         return 'brown'
     }
-
 }
 
-let Dog = function(breed, name, color,age) {
+
+// klassedefinitie met constructor
+let Dog = function(breed, name, color, age, gender) {
     this.breed = breed;
     this.name = name;
     this.color = color;
@@ -18,28 +19,43 @@ let Dog = function(breed, name, color,age) {
     this.colorEyes = function() {
         return 'pink'
     };
+    this.birthYear = function() {
 
-    this.birthYear = function() {
         const now = new Date();
+        const year = now.getFullYear();
+
+
+        // 2018 vervangen naar huidig jaar
+        // zodat het ook nog in 2027 werkt
+        const currentYear = year;
         
-    }
-    this.birthYear = function() {
-        const currentYear = 2018
+        // geboortejaar berekenen
         let birthYear = currentYear - this.age;
-        return birthyear;
+        
+        // geboortejaar retourneren
+        return birthYear;
+
+    }
 }
 
-let myFavouriteDog = new Dog('Collie', 'Lassie','brown',20);
-
-//property toevoegen aan het object
-myfavouriteDog.bestToyEver = 'een mooie rode bal';
-
-//functie toevoegen aan de constructor,
-Dog.prototype.speak = function(Line) {
-    let slogan = 'de' + this.breed + 'hond zegt: ' + Line;
+// functie toevoegen aan de constructor
+// zonder constructor zelf te wijzigen
+Dog.prototype.speak = function(line) {
+    
+    let slogan = 'De ' + this.breed + ' hond zegt: ' + line;
     return slogan;
 }
 
+let myFavouriteDog = new Dog('Collie', 'Lassie', 'brown and black', 98, 'm');
+
+// property toevoegen aan het object
+myFavouriteDog.bestToyEver = 'een mooie rode bal';
+
 let saySomething = myFavouriteDog.speak('Er klopt iemand op de deur');
 console.log(saySomething);
+
+
+
+
+
 document.write(myFavouriteDog.birthYear());

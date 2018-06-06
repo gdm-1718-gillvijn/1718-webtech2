@@ -1,43 +1,29 @@
-
-// draw a mountain
-drawMountain(2);
-drawMountain(5);
-drawMountain(10);
-
 setInterval(function(){
-    var randomTrueFalse = Math.random() >= 0.5;
+    // true or false
+    var randomTrueFalse = Math.random() >= 0.5; 
+    // getal tussen 1 en 4
+    var randomBetween = Math.floor(Math.random() * 4) + 1;
 
-    // random een true of False
+    // random een true of false
     if(randomTrueFalse == true) {
-        drawMountain(randomBetween); //teken berg
+        drawMountain(randomBetween); // teken berg
     } else {
         drawFlatArea(randomBetween); // teken dal
     }
-}, 400); //elke seconde
-
-
+}, 5000); // elke seconde
 function drawMountain(lengthOfMountain) {
-
-    //initiele toplengte
-    let i = 1;
-
-    //helling
-    document.write('/');
-
-    //zolang het einde van de top nog niet bereikt
-    while(i<= lengthOfMountain) {
+    let i = 1;    // initiële toplengte
+    document.write('/');    // helling
+    while(i <= lengthOfMountain) {
         document.write("'");
         i++;
     }
-
-    //afdaling
-    document.write("\\");
+    document.write("\\");// afdaling
 }
-
 function drawFlatArea(lengthFlat) {
-    let i= 1;
+    let i = 1;
     while(i <= lengthFlat) {
-        document.write("'");
-        i++
+        document.write("_");
+        i++;
     }
 }
